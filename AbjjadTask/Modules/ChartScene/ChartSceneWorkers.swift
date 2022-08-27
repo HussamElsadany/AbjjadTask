@@ -6,6 +6,10 @@
 //  Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-class ChartSceneWorkers {
+protocol ChartSceneWorkersLogic: AnyObject {
+
+}
+
+class ChartSceneWorkers: ChartSceneWorkersLogic {
 
 }

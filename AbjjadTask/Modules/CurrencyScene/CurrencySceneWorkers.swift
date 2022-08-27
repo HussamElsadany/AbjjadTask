@@ -6,11 +6,11 @@
 //  Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-protocol CurrencySceneWorkersLogic {
+protocol CurrencySceneWorkersLogic: AnyObject {
     func getAllCurrencies(success: @escaping([CurrencyModel]) -> Void)
 }
 
-struct CurrencySceneWorkers: CurrencySceneWorkersLogic {
+class CurrencySceneWorkers: CurrencySceneWorkersLogic {
 
     func getAllCurrencies(success: @escaping([CurrencyModel]) -> Void) {
         let currency1 = CurrencyModel(title: "BTC", value: "BTCUSDT")

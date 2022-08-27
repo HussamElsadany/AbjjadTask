@@ -21,6 +21,7 @@
 		DC01D98C28B9B93C00F9C256 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D98A28B9B93C00F9C256 /* ChartViewController.swift */; };
 		DC01D98D28B9B93C00F9C256 /* ChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC01D98B28B9B93C00F9C256 /* ChartViewController.xib */; };
 		DC01D98F28B9B94300F9C256 /* ChartSceneWorkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D98E28B9B94300F9C256 /* ChartSceneWorkers.swift */; };
+		DC01D99F28B9BD4A00F9C256 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D99E28B9BD4A00F9C256 /* NetworkClient.swift */; };
 		DCB806AC28B99D85002488F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB806AB28B99D85002488F3 /* AppDelegate.swift */; };
 		DCB806AE28B99D85002488F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB806AD28B99D85002488F3 /* SceneDelegate.swift */; };
 		DCB806B528B99D89002488F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB806B428B99D89002488F3 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		DC01D98A28B9B93C00F9C256 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		DC01D98B28B9B93C00F9C256 /* ChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartViewController.xib; sourceTree = "<group>"; };
 		DC01D98E28B9B94300F9C256 /* ChartSceneWorkers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSceneWorkers.swift; sourceTree = "<group>"; };
+		DC01D99E28B9BD4A00F9C256 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		DCB806A828B99D85002488F3 /* AbjjadTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbjjadTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB806AB28B99D85002488F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB806AD28B99D85002488F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DC01D99D28B9BD3B00F9C256 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DC01D99E28B9BD4A00F9C256 /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		DCB8069F28B99D85002488F3 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +181,7 @@
 				DCB806AD28B99D85002488F3 /* SceneDelegate.swift */,
 				DCB806B628B99D89002488F3 /* LaunchScreen.storyboard */,
 				DCB806B928B99D89002488F3 /* Info.plist */,
+				DC01D99D28B9BD3B00F9C256 /* Network */,
 				DC01D97028B9A7A300F9C256 /* Models */,
 				DCB806BF28B99DFA002488F3 /* Modules */,
 				DC01D97728B9ABEF00F9C256 /* Extensions */,
@@ -348,6 +359,7 @@
 				DCB806CB28B99FA0002488F3 /* CurrencySceneModels.swift in Sources */,
 				DCB806AC28B99D85002488F3 /* AppDelegate.swift in Sources */,
 				DC01D97528B9AB2B00F9C256 /* CurrencyTableViewCell.swift in Sources */,
+				DC01D99F28B9BD4A00F9C256 /* NetworkClient.swift in Sources */,
 				DCB806CA28B99FA0002488F3 /* CurrencySceneRouter.swift in Sources */,
 				DC01D98428B9B92F00F9C256 /* ChartScenePresenter.swift in Sources */,
 				DCB806CC28B99FA0002488F3 /* CurrencySceneConfigurator.swift in Sources */,

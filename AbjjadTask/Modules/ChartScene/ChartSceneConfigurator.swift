@@ -11,7 +11,8 @@ class ChartSceneConfigurator {
     static func configure() -> ChartViewController {
         let viewController = ChartViewController()
         let presenter = ChartScenePresenter(displayView: viewController)
-        let interactor = ChartSceneInteractor(presenter: presenter)
+        let worker = ChartSceneWorkers()
+        let interactor = ChartSceneInteractor(presenter: presenter, worker: worker)
         let router = ChartSceneRouter(controller: viewController)
         viewController.interactor = interactor
         viewController.dataStore = interactor

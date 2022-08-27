@@ -8,12 +8,14 @@
 
 protocol CurrencySceneRoutingLogic: AnyObject {
     typealias Controller = CurrencySceneDisplayView & CurrencyViewController
+
+    func routeToChartsScene(currency: CurrencyModel)
 }
 
 class CurrencySceneRouter {
 
     // MARK: Stored Properties
-    var viewController: Controller?
+    private var viewController: Controller?
 
     // MARK: Initializers
     required init(controller: Controller?) {
@@ -23,4 +25,8 @@ class CurrencySceneRouter {
 
 extension CurrencySceneRouter: CurrencySceneRoutingLogic {
 
+    func routeToChartsScene(currency: CurrencyModel) {
+        let chartsViewController = ChartSceneConfigurator.configure()
+        viewController?.navigationController?.pushViewController(chartsViewController, animated: true)
+    }
 }

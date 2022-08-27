@@ -64,6 +64,7 @@ extension CurrencyViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        let currency = dataStore.currencies[indexPath.row]
+        router.routeToChartsScene(currency: currency)
     }
 }

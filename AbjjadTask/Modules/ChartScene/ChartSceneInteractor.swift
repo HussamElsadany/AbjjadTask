@@ -7,21 +7,24 @@
 //
 
 protocol ChartSceneBusinessLogic: AnyObject {
-
 }
 
 protocol ChartSceneDataStore: AnyObject {
-
+    var selectedCurrency: CurrencyModel? { get set }
 }
 
 class ChartSceneInteractor: ChartSceneBusinessLogic, ChartSceneDataStore {
 
     // MARK: Stored Properties
-    let presenter: ChartScenePresentationLogic
+    private let presenter: ChartScenePresentationLogic
+    private let worker: ChartSceneWorkersLogic
+
+    var selectedCurrency: CurrencyModel?
 
     // MARK: Initializers
-    required init(presenter: ChartScenePresentationLogic) {
+    required init(presenter: ChartScenePresentationLogic, worker: ChartSceneWorkersLogic) {
         self.presenter = presenter
+        self.worker = worker
     }
 }
 
