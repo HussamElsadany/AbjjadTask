@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23241159CFA9FF22F682B864 /* Pods_AbjjadTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67327508F6C7293FC1A63CA6 /* Pods_AbjjadTask.framework */; };
 		DC01D97228B9A7BD00F9C256 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D97128B9A7BD00F9C256 /* CurrencyModel.swift */; };
 		DC01D97528B9AB2B00F9C256 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D97328B9AB2B00F9C256 /* CurrencyTableViewCell.swift */; };
 		DC01D97628B9AB2B00F9C256 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC01D97428B9AB2B00F9C256 /* CurrencyTableViewCell.xib */; };
@@ -35,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5242591F6807136566C13BFC /* Pods-AbjjadTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbjjadTask.debug.xcconfig"; path = "Target Support Files/Pods-AbjjadTask/Pods-AbjjadTask.debug.xcconfig"; sourceTree = "<group>"; };
+		67327508F6C7293FC1A63CA6 /* Pods_AbjjadTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbjjadTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A69F393AC236AA4A1199F454 /* Pods-AbjjadTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbjjadTask.release.xcconfig"; path = "Target Support Files/Pods-AbjjadTask/Pods-AbjjadTask.release.xcconfig"; sourceTree = "<group>"; };
 		DC01D97128B9A7BD00F9C256 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		DC01D97328B9AB2B00F9C256 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		DC01D97428B9AB2B00F9C256 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
@@ -69,12 +73,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23241159CFA9FF22F682B864 /* Pods_AbjjadTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EA229623532A6AABBA1BC53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5242591F6807136566C13BFC /* Pods-AbjjadTask.debug.xcconfig */,
+				A69F393AC236AA4A1199F454 /* Pods-AbjjadTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92022C1EA55EAFD9B011D6AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67327508F6C7293FC1A63CA6 /* Pods_AbjjadTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC01D96F28B9A5F600F9C256 /* CurrencyTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +152,8 @@
 			children = (
 				DCB806AA28B99D85002488F3 /* AbjjadTask */,
 				DCB806A928B99D85002488F3 /* Products */,
+				6EA229623532A6AABBA1BC53 /* Pods */,
+				92022C1EA55EAFD9B011D6AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCB806BC28B99D89002488F3 /* Build configuration list for PBXNativeTarget "AbjjadTask" */;
 			buildPhases = (
+				2F5B9B9B631840AD3CF7335B /* [CP] Check Pods Manifest.lock */,
 				DCB806A428B99D85002488F3 /* Sources */,
 				DCB806A528B99D85002488F3 /* Frameworks */,
 				DCB806A628B99D85002488F3 /* Resources */,
+				83567C2B9CDBECBFCE743C3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +290,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F5B9B9B631840AD3CF7335B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AbjjadTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83567C2B9CDBECBFCE743C3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AbjjadTask/Pods-AbjjadTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AbjjadTask/Pods-AbjjadTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AbjjadTask/Pods-AbjjadTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCB806A428B99D85002488F3 /* Sources */ = {
@@ -422,6 +491,7 @@
 		};
 		DCB806BD28B99D89002488F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5242591F6807136566C13BFC /* Pods-AbjjadTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,6 +519,7 @@
 		};
 		DCB806BE28B99D89002488F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69F393AC236AA4A1199F454 /* Pods-AbjjadTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
