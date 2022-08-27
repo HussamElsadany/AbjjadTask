@@ -13,6 +13,7 @@ protocol CurrencySceneWorkersLogic: AnyObject {
 class CurrencySceneWorkers: CurrencySceneWorkersLogic {
 
     func getAllCurrencies(success: @escaping([CurrencyModel]) -> Void) {
+        //TODO: Create DataSource for these currencies.
         let currency1 = CurrencyModel(title: "BTC", value: "BTCUSDT")
         let currency2 = CurrencyModel(title: "LTC", value: "LTCUSDT")
         let currency3 = CurrencyModel(title: "ETH", value: "ETHUSDT")

@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+// Simple network layer that match with single api caller.
 public class NetworkClient {
 
     public static var shared = NetworkClient()

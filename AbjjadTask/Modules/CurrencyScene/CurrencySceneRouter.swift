@@ -27,6 +27,7 @@ extension CurrencySceneRouter: CurrencySceneRoutingLogic {
 
     func routeToChartsScene(currency: CurrencyModel) {
         let chartsViewController = ChartSceneConfigurator.configure()
+        chartsViewController.dataStore.selectedCurrency = currency
         viewController?.navigationController?.pushViewController(chartsViewController, animated: true)
     }
 }

@@ -7,9 +7,27 @@
 //
 
 enum ChartScene {
-
+    enum Chart { }
 }
 
-extension ChartScene {
+extension ChartScene.Chart {
 
+    struct Candle {
+        let openTime: Double
+        let open: Double
+        let high: Double
+        let low: Double
+        let close: Double
+        let volume: Double
+        let closeTime: Double
+        let quoteAssetVolume: Double
+        let numberOfTrades: Double
+        let rakerBuyBaseAssetVolume: Double
+        let takerBuyQuoteAssetVolume: Double
+        let ignore: Double
+    }
+
+    struct ViewModel {
+        let candleSticks: [Candle]
+    }
 }
