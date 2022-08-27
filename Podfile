@@ -7,4 +7,7 @@ target 'AbjjadTask' do
 
   # Pods for AbjjadTask
   pod 'Charts'
+  pod 'FirebaseCore'
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseCrashlytics'
 end
