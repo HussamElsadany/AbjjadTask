@@ -86,7 +86,6 @@
 				5242591F6807136566C13BFC /* Pods-AbjjadTask.debug.xcconfig */,
 				A69F393AC236AA4A1199F454 /* Pods-AbjjadTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -173,8 +172,8 @@
 				DCB806B628B99D89002488F3 /* LaunchScreen.storyboard */,
 				DCB806B928B99D89002488F3 /* Info.plist */,
 				DC01D97028B9A7A300F9C256 /* Models */,
-				DC01D97728B9ABEF00F9C256 /* Extensions */,
 				DCB806BF28B99DFA002488F3 /* Modules */,
+				DC01D97728B9ABEF00F9C256 /* Extensions */,
 				DCB806D428B9A53F002488F3 /* Resources */,
 			);
 			path = AbjjadTask;

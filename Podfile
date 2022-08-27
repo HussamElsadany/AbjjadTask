@@ -6,6 +6,5 @@ target 'AbjjadTask' do
   use_frameworks!
 
   # Pods for AbjjadTask
-  pod 'Alamofire'
   pod 'Charts'
 end
