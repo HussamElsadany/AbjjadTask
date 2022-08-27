@@ -12,6 +12,14 @@
 		DC01D97628B9AB2B00F9C256 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC01D97428B9AB2B00F9C256 /* CurrencyTableViewCell.xib */; };
 		DC01D97928B9AC0E00F9C256 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D97828B9AC0E00F9C256 /* UITableView+Extension.swift */; };
 		DC01D97B28B9AEF300F9C256 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D97A28B9AEF300F9C256 /* UIView+Extension.swift */; };
+		DC01D98428B9B92F00F9C256 /* ChartScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D97F28B9B92F00F9C256 /* ChartScenePresenter.swift */; };
+		DC01D98528B9B92F00F9C256 /* ChartSceneModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D98028B9B92F00F9C256 /* ChartSceneModels.swift */; };
+		DC01D98628B9B92F00F9C256 /* ChartSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D98128B9B92F00F9C256 /* ChartSceneInteractor.swift */; };
+		DC01D98728B9B92F00F9C256 /* ChartSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D98228B9B92F00F9C256 /* ChartSceneRouter.swift */; };
+		DC01D98828B9B92F00F9C256 /* ChartSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D98328B9B92F00F9C256 /* ChartSceneConfigurator.swift */; };
+		DC01D98C28B9B93C00F9C256 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D98A28B9B93C00F9C256 /* ChartViewController.swift */; };
+		DC01D98D28B9B93C00F9C256 /* ChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC01D98B28B9B93C00F9C256 /* ChartViewController.xib */; };
+		DC01D98F28B9B94300F9C256 /* ChartSceneWorkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D98E28B9B94300F9C256 /* ChartSceneWorkers.swift */; };
 		DCB806AC28B99D85002488F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB806AB28B99D85002488F3 /* AppDelegate.swift */; };
 		DCB806AE28B99D85002488F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB806AD28B99D85002488F3 /* SceneDelegate.swift */; };
 		DCB806B528B99D89002488F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB806B428B99D89002488F3 /* Assets.xcassets */; };
@@ -32,6 +40,14 @@
 		DC01D97428B9AB2B00F9C256 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
 		DC01D97828B9AC0E00F9C256 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		DC01D97A28B9AEF300F9C256 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DC01D97F28B9B92F00F9C256 /* ChartScenePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartScenePresenter.swift; sourceTree = "<group>"; };
+		DC01D98028B9B92F00F9C256 /* ChartSceneModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSceneModels.swift; sourceTree = "<group>"; };
+		DC01D98128B9B92F00F9C256 /* ChartSceneInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSceneInteractor.swift; sourceTree = "<group>"; };
+		DC01D98228B9B92F00F9C256 /* ChartSceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSceneRouter.swift; sourceTree = "<group>"; };
+		DC01D98328B9B92F00F9C256 /* ChartSceneConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSceneConfigurator.swift; sourceTree = "<group>"; };
+		DC01D98A28B9B93C00F9C256 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		DC01D98B28B9B93C00F9C256 /* ChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartViewController.xib; sourceTree = "<group>"; };
+		DC01D98E28B9B94300F9C256 /* ChartSceneWorkers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSceneWorkers.swift; sourceTree = "<group>"; };
 		DCB806A828B99D85002488F3 /* AbjjadTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbjjadTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB806AB28B99D85002488F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB806AD28B99D85002488F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +101,29 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DC01D97C28B9B8F800F9C256 /* ChartScene */ = {
+			isa = PBXGroup;
+			children = (
+				DC01D98928B9B93300F9C256 /* Views */,
+				DC01D98328B9B92F00F9C256 /* ChartSceneConfigurator.swift */,
+				DC01D98128B9B92F00F9C256 /* ChartSceneInteractor.swift */,
+				DC01D98028B9B92F00F9C256 /* ChartSceneModels.swift */,
+				DC01D97F28B9B92F00F9C256 /* ChartScenePresenter.swift */,
+				DC01D98228B9B92F00F9C256 /* ChartSceneRouter.swift */,
+				DC01D98E28B9B94300F9C256 /* ChartSceneWorkers.swift */,
+			);
+			path = ChartScene;
+			sourceTree = "<group>";
+		};
+		DC01D98928B9B93300F9C256 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC01D98A28B9B93C00F9C256 /* ChartViewController.swift */,
+				DC01D98B28B9B93C00F9C256 /* ChartViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DCB8069F28B99D85002488F3 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +158,7 @@
 		DCB806BF28B99DFA002488F3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DC01D97C28B9B8F800F9C256 /* ChartScene */,
 				DCB806C028B99F5B002488F3 /* CurrencyScene */,
 			);
 			path = Modules;
@@ -214,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC01D98D28B9B93C00F9C256 /* ChartViewController.xib in Resources */,
 				DC01D97628B9AB2B00F9C256 /* CurrencyTableViewCell.xib in Resources */,
 				DCB806D128B99FAA002488F3 /* CurrencyViewController.xib in Resources */,
 				DCB806B828B99D89002488F3 /* LaunchScreen.storyboard in Resources */,
@@ -228,19 +269,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC01D98628B9B92F00F9C256 /* ChartSceneInteractor.swift in Sources */,
 				DC01D97228B9A7BD00F9C256 /* CurrencyModel.swift in Sources */,
 				DC01D97B28B9AEF300F9C256 /* UIView+Extension.swift in Sources */,
+				DC01D98728B9B92F00F9C256 /* ChartSceneRouter.swift in Sources */,
 				DCB806C928B99FA0002488F3 /* CurrencyScenePresenter.swift in Sources */,
+				DC01D98C28B9B93C00F9C256 /* ChartViewController.swift in Sources */,
 				DCB806D028B99FAA002488F3 /* CurrencyViewController.swift in Sources */,
+				DC01D98528B9B92F00F9C256 /* ChartSceneModels.swift in Sources */,
 				DCB806CB28B99FA0002488F3 /* CurrencySceneModels.swift in Sources */,
 				DCB806AC28B99D85002488F3 /* AppDelegate.swift in Sources */,
 				DC01D97528B9AB2B00F9C256 /* CurrencyTableViewCell.swift in Sources */,
 				DCB806CA28B99FA0002488F3 /* CurrencySceneRouter.swift in Sources */,
+				DC01D98428B9B92F00F9C256 /* ChartScenePresenter.swift in Sources */,
 				DCB806CC28B99FA0002488F3 /* CurrencySceneConfigurator.swift in Sources */,
 				DCB806D328B99FB1002488F3 /* CurrencySceneWorkers.swift in Sources */,
+				DC01D98828B9B92F00F9C256 /* ChartSceneConfigurator.swift in Sources */,
 				DCB806C828B99FA0002488F3 /* CurrencySceneInteractor.swift in Sources */,
 				DCB806AE28B99D85002488F3 /* SceneDelegate.swift in Sources */,
 				DC01D97928B9AC0E00F9C256 /* UITableView+Extension.swift in Sources */,
+				DC01D98F28B9B94300F9C256 /* ChartSceneWorkers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

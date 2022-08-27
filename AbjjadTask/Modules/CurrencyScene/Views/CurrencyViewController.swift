@@ -62,4 +62,8 @@ extension CurrencyViewController: UITableViewDataSource, UITableViewDelegate {
         cell.setRadius(first: indexPath.row == 0,
                        last: (indexPath.row + 1) == viewStore.currenciesViewModel?.currencies.count)
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+    }
 }
