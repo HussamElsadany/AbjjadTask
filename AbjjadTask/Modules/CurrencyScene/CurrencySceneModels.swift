@@ -7,9 +7,16 @@
 //
 
 enum CurrencyScene {
-
+    enum Currency { }
 }
 
-extension CurrencyScene {
+extension CurrencyScene.Currency {
 
+    struct Currency {
+        let name: String
+    }
+
+    struct ViewModel {
+        let currencies: [Currency]
+    }
 }

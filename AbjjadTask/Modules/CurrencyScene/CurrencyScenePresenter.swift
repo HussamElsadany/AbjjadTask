@@ -7,17 +7,19 @@
 //
 
 protocol CurrencyScenePresentationLogic: AnyObject {
-
+    func present(currencies: [CurrencyModel])
 }
 
 protocol CurrencySceneViewStore: AnyObject {
-
+    var currenciesViewModel: CurrencyScene.Currency.ViewModel? { get set }
 }
 
 class CurrencyScenePresenter: CurrencyScenePresentationLogic, CurrencySceneViewStore {
 
     // MARK: Stored Properties
-    weak var displayView: CurrencySceneDisplayView?
+    private weak var displayView: CurrencySceneDisplayView?
+
+    var currenciesViewModel: CurrencyScene.Currency.ViewModel?
 
     // MARK: Initializers
     required init(displayView: CurrencySceneDisplayView) {
@@ -26,5 +28,18 @@ class CurrencyScenePresenter: CurrencyScenePresentationLogic, CurrencySceneViewS
 }
 
 extension CurrencyScenePresenter {
+    
+    func present(currencies: [CurrencyModel]) {
+        let currenciesViewModels = currencies.map {
+            return generateCurrencyViewModel($0)
+        }
+        currenciesViewModel = CurrencyScene.Currency.ViewModel(currencies: currenciesViewModels)
+        displayView?.displayCurrencies(viewModel: currenciesViewModel!)
+    }
+}
 
+private extension CurrencyScenePresenter {
+    func generateCurrencyViewModel(_ currency: CurrencyModel) -> CurrencyScene.Currency.Currency {
+        return CurrencyScene.Currency.Currency(name: currency.title)
+    }
 }

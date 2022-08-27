@@ -11,7 +11,8 @@ class CurrencySceneConfigurator {
     static func configure() -> CurrencyViewController {
         let viewController = CurrencyViewController()
         let presenter = CurrencyScenePresenter(displayView: viewController)
-        let interactor = CurrencySceneInteractor(presenter: presenter)
+        let worker = CurrencySceneWorkers()
+        let interactor = CurrencySceneInteractor(presenter: presenter, worker: worker)
         let router = CurrencySceneRouter(controller: viewController)
         viewController.interactor = interactor
         viewController.dataStore = interactor

@@ -6,6 +6,16 @@
 //  Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-class CurrencySceneWorkers {
+protocol CurrencySceneWorkersLogic {
+    func getAllCurrencies(success: @escaping([CurrencyModel]) -> Void)
+}
 
+struct CurrencySceneWorkers: CurrencySceneWorkersLogic {
+
+    func getAllCurrencies(success: @escaping([CurrencyModel]) -> Void) {
+        let currency1 = CurrencyModel(title: "BTC", value: "BTCUSDT")
+        let currency2 = CurrencyModel(title: "LTC", value: "LTCUSDT")
+        let currency3 = CurrencyModel(title: "ETH", value: "ETHUSDT")
+        success([currency1, currency2, currency3])
+    }
 }
