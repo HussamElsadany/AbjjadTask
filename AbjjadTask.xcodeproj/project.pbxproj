@@ -25,6 +25,7 @@
 		DC01D9A128B9BFE800F9C256 /* ChartModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D9A028B9BFE800F9C256 /* ChartModels.swift */; };
 		DC01D9A528BA90C300F9C256 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D9A428BA90C300F9C256 /* Collection+Extension.swift */; };
 		DC01D9A728BAE1B000F9C256 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC01D9A628BAE1B000F9C256 /* GoogleService-Info.plist */; };
+		DC01D9AA28BAE5A600F9C256 /* AnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01D9A928BAE5A600F9C256 /* AnalyticsLogger.swift */; };
 		DCB806AC28B99D85002488F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB806AB28B99D85002488F3 /* AppDelegate.swift */; };
 		DCB806AE28B99D85002488F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB806AD28B99D85002488F3 /* SceneDelegate.swift */; };
 		DCB806B528B99D89002488F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB806B428B99D89002488F3 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		DC01D9A028B9BFE800F9C256 /* ChartModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModels.swift; sourceTree = "<group>"; };
 		DC01D9A428BA90C300F9C256 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		DC01D9A628BAE1B000F9C256 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC01D9A928BAE5A600F9C256 /* AnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLogger.swift; sourceTree = "<group>"; };
 		DCB806A828B99D85002488F3 /* AbjjadTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbjjadTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB806AB28B99D85002488F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB806AD28B99D85002488F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		DC01D9A828BAE59600F9C256 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC01D9A928BAE5A600F9C256 /* AnalyticsLogger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DCB8069F28B99D85002488F3 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +200,7 @@
 				DCB806B628B99D89002488F3 /* LaunchScreen.storyboard */,
 				DC01D9A628BAE1B000F9C256 /* GoogleService-Info.plist */,
 				DCB806B928B99D89002488F3 /* Info.plist */,
+				DC01D9A828BAE59600F9C256 /* Helpers */,
 				DC01D99D28B9BD3B00F9C256 /* Network */,
 				DC01D97028B9A7A300F9C256 /* Models */,
 				DCB806BF28B99DFA002488F3 /* Modules */,
@@ -358,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC01D9AA28BAE5A600F9C256 /* AnalyticsLogger.swift in Sources */,
 				DC01D98628B9B92F00F9C256 /* ChartSceneInteractor.swift in Sources */,
 				DC01D97228B9A7BD00F9C256 /* CurrencyModel.swift in Sources */,
 				DC01D97B28B9AEF300F9C256 /* UIView+Extension.swift in Sources */,

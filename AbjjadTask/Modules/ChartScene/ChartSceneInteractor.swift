@@ -45,8 +45,8 @@ extension ChartSceneInteractor {
                                  interval: interval) { [weak self] response in
             self?.chart = response
             self?.presenter.present(chart: response)
-        } failure: { error in
-            
+        } failure: { [weak self] error in
+            self?.presenter.present(error: error)
         }
     }
 }

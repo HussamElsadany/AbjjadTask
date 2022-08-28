@@ -21,6 +21,11 @@ class CurrencyViewController: UIViewController {
     var viewStore: CurrencySceneViewStore!
     var router: CurrencySceneRoutingLogic!
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        AnalyticsLogger.shared.log(AnalyticsEvent.screenName(screen: "CurrencyScene"))
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()

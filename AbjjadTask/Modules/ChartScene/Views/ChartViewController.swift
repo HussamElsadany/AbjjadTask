@@ -11,6 +11,7 @@ import Charts
 
 protocol ChartSceneDisplayView: AnyObject {
     func display(viewModel: ChartScene.Chart.ViewModel)
+    func displayError(message: String)
 }
 
 class ChartViewController: UIViewController {
@@ -22,6 +23,11 @@ class ChartViewController: UIViewController {
     var dataStore: ChartSceneDataStore!
     var viewStore: ChartSceneViewStore!
     var router: ChartSceneRoutingLogic!
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        AnalyticsLogger.shared.log(AnalyticsEvent.screenName(screen: "ChartScene"))
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +61,16 @@ extension ChartViewController: ChartSceneDisplayView {
             self.activityIndecator.stopAnimating()
             self.setData()
         }
+    }
+
+    func displayError(message: String) {
+        DispatchQueue.main.async {
+            self.activityIndecator.stopAnimating()
+        }
+        AnalyticsLogger.shared.log(AnalyticsEvent.error(message: message))
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .destructive))
+        present(alertController, animated: true)
     }
 }
 

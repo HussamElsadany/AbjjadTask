@@ -8,6 +8,7 @@
 
 protocol ChartScenePresentationLogic: AnyObject {
     func present(chart: ChartModelResponse)
+    func present(error: Error)
 }
 
 protocol ChartSceneViewStore: AnyObject {
@@ -35,6 +36,10 @@ extension ChartScenePresenter {
         }
         chartViewModel = ChartScene.Chart.ViewModel(candleSticks: candleViewModels)
         displayView?.display(viewModel: chartViewModel!)
+    }
+
+    func present(error: Error) {
+        displayView?.displayError(message: error.localizedDescription)
     }
 }
 
